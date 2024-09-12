@@ -13,8 +13,7 @@ body  {
   display: flex;
   flex-direction: column;
   max-width: 80vw;
-  max-height: 80vh;
-
+  max-height: 100vh;
 }
 
 .slider  {
