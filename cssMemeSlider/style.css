@@ -12,15 +12,81 @@ body  {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 80vv;
-  height: 100vh;
+  max-width: 80vw;
+  max-height: 80vh;
 
 }
 
 .slider  {
-  max-width: 80vw;
-  max-height: 80vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
+
+.slide  {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 100%;
+}
+
+.slide__img  {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel  {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.controls  {
+  display: flex;
+}
+
+label  {
+  cursor: pointer;
+	width: 2.4rem;
+	height: 2.4rem;
+	display: flex;
+}
+
+.controls__btn  {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background-color: #FF8C00;
+	border: 0.3rem solid #556B2F;
+  border-radius: 50%;
+  cursor: pointer;
+  /* transition: all 0.3s ease; */
+	/* margin: auto; */
+}
+
+.controls__btn:hover  {
+  background-color: #FF8C00;
+  border: 0.3rem solid #FF8C00;
+}
+
+.controls__btn:active  {
+  background-color: #FF8C00;
+  border: 0.3rem solid white;
+}
+
+.panel__text  {
+  color: #FF8C00;
+  font-size: 2.4rem;
+}
+
+

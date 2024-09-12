@@ -8,28 +8,30 @@
 </head>
 <body>
   <div class="wrapper">
-    <input type="radio" name="slider" id="slide1">
+    <input type="radio" name="slider" id="slide1" checked>
     <input type="radio" name="slider" id="slide2">
     <input type="radio" name="slider" id="slide3">
     <input type="radio" name="slider" id="slide4">
     <div class="slider">
-      <div class="slide"><img src="./img/slide1.JPG"></div>
-      <div class="slide"><img src="./img/slide2.JPG"></div>
-      <div class="slide"><img src="./img/slide3.JPG"></div>
-      <div class="slide"><img src="./img/slide4.JPG"></div>
+      <div class="slide" id="slide1"><img class="slide__img" src="./img/slide1.JPG"></div>
+      <div class="slide" id="slide2"><img class="slide__img" src="./img/slide2.JPG"></div>
+      <div class="slide" id="slide3"><img class="slide__img" src="./img/slide3.JPG"></div>
+      <div class="slide" id="slide4"><img class="slide__img" src="./img/slide4.JPG"></div>
     </div>
     <div>
-      <div class="controls">
-        <label for="'slide1"></label>
-        <label for="'slide2"></label>
-        <label for="'slide3"></label>
-        <label for="'slide4"></label>
-      </div>
-      <div class="texts">
-        <div>Oops, I did it again</div>
-        <div>I played with your heart</div>
-        <div>got lost in the game</div>
-        <div>Oh baby, baby</div>
+      <div class="panel">
+        <div class="texts">
+          <div class="panel__text">Oops, I did it again</div>
+          <div class="panel__text">I played with your heart</div>
+          <div class="panel__text">got lost in the game</div>
+          <div class="panel__text">Oh baby, baby</div>
+        </div>
+        <div class="controls">
+          <label for="'slide1"><div class="controls__btn"></div></label>
+          <label for="'slide2"><div class="controls__btn"></div></label>
+          <label for="'slide3"><div class="controls__btn"></div></label>
+          <label for="'slide4"><div class="controls__btn"></div></label>
+        </div>
       </div>
     </div>
   </div>
